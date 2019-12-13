@@ -18,7 +18,8 @@ namespace AllUniqueCharacters {
 
                 inputString = Console.ReadLine();
 
-                Console.WriteLine(AreAllCharactersUniqueDict(inputString));
+                Console.WriteLine($"Dictionary: {AreAllCharactersUniqueDict(inputString)}");
+                Console.WriteLine($"Array: {AreAllCharactersUniqueArray(inputString)}");
                 Console.WriteLine();
 
             } while (inputString.ToLower() != "q");
@@ -44,6 +45,32 @@ namespace AllUniqueCharacters {
                 }
 
                 dict.Add(item, 1);
+
+            }
+
+            return allCharactersAreUnique;
+
+        }
+
+
+        /// <summary>
+        /// Solution using array
+        /// Pretty much same as dictionary solution
+        /// </summary>
+        /// <param name="stringToCheck"></param>
+        /// <returns></returns>
+        static bool AreAllCharactersUniqueArray(string stringToCheck) {
+
+            bool allCharactersAreUnique = true;
+            var arr = new char[stringToCheck.Length];
+
+            for (int i = 0; i < stringToCheck.Length; i++) {
+
+                if (Array.IndexOf(arr, stringToCheck[i]) > -1) {
+                    return false;
+                }
+
+                arr[i] = stringToCheck[i];
 
             }
 
