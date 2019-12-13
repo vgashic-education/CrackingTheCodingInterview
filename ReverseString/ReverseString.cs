@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Helper;
+using System;
 
 namespace ReverseString {
-    class Program {
+    class ReverseString {
 
         /// <summary>
         /// Write code to reverse a C-Style String.
@@ -12,27 +13,16 @@ namespace ReverseString {
 
             string str = Console.ReadLine();
 
-            // create C style string
-            // size iz length of string + 1
-            // last char will by default be null
-            char?[] charArray = new char?[str.Length + 1];
+            var reverse = ReverseCStyleString(str.ToCStyleString());
 
-            for (int i = 0; i < str.Length; i++) {
-                charArray[i] = str[i];
-            }
-
-            var reverse = ReverseString(charArray);
-
-            for (int i = 0; i < reverse.Length - 1; i++) {
-                Console.Write(charArray[i]);
-            }
+            Console.WriteLine(reverse.ConvertToString());
 
             Console.ReadKey();
 
         }
 
 
-        private static char?[] ReverseString(char?[] charArray) {
+        private static char?[] ReverseCStyleString(char?[] charArray) {
 
             // length without last null character
             int realLength = charArray.Length - 1;

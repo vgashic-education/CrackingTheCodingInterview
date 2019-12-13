@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllUniqueCharacters", "AllUniqueCharacters\AllUniqueCharacters.csproj", "{4C445AC9-3E39-4AF5-BD17-B4D2FB617DDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllUniqueCharacters", "AllUniqueCharacters\AllUniqueCharacters.csproj", "{4C445AC9-3E39-4AF5-BD17-B4D2FB617DDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseString", "ReverseString\ReverseString.csproj", "{9DE7947A-23D1-40AA-8D46-CE2E099B6CD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseString", "ReverseString\ReverseString.csproj", "{9DE7947A-23D1-40AA-8D46-CE2E099B6CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromString", "RemoveDuplicatesFromString\RemoveDuplicatesFromString.csproj", "{F4F13A79-00D3-40ED-BBD7-D8E094497D7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{DD294A55-0A3B-4755-B0F9-75844DE6FEF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{9DE7947A-23D1-40AA-8D46-CE2E099B6CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DE7947A-23D1-40AA-8D46-CE2E099B6CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DE7947A-23D1-40AA-8D46-CE2E099B6CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F13A79-00D3-40ED-BBD7-D8E094497D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F13A79-00D3-40ED-BBD7-D8E094497D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F13A79-00D3-40ED-BBD7-D8E094497D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F13A79-00D3-40ED-BBD7-D8E094497D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD294A55-0A3B-4755-B0F9-75844DE6FEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD294A55-0A3B-4755-B0F9-75844DE6FEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD294A55-0A3B-4755-B0F9-75844DE6FEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD294A55-0A3B-4755-B0F9-75844DE6FEF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
