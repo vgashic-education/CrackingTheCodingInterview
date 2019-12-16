@@ -12,9 +12,9 @@ namespace RemoveDuplicatesFromString {
     /// FOLLOW UP
     /// Write the test cases for this method.
     /// </summary>
-    class RemoveDuplicatesFromString {
+    public static class RemoveDuplicatesFromString {
 
-        static void Main(string[] args) {
+        public static void Main(string[] args) {
 
             string str = Console.ReadLine();
 
@@ -30,7 +30,7 @@ namespace RemoveDuplicatesFromString {
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        static string RemoveDuplicatesLinq(string str) {
+        public static string RemoveDuplicatesLinq(string str) {
 
             var arr = str.ToCharArray();
 
@@ -41,7 +41,7 @@ namespace RemoveDuplicatesFromString {
         }
 
 
-        static string RemoveDuplicates(string str) {
+        public static string RemoveDuplicates(string str) {
 
             var strArr = str.ToCStyleString();
 
