@@ -29,8 +29,11 @@ namespace Helper {
             StringBuilder stringBuilder = new StringBuilder();
 
             for (int i = 0; i < arr.Length; i++) {
-                arr[i] = arr[i] == null ? '\0' : arr[i];
-                stringBuilder.Append(arr[i]);
+                
+                if (arr[i] != '\0' && arr[i] != null) {
+                    stringBuilder.Append(arr[i]);
+                }
+
             }
 
             return stringBuilder.ToString();
