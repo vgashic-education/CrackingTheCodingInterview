@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Helper;
+using System;
 using System.Linq;
+
 
 namespace RemoveDuplicatesFromString {
 
@@ -10,7 +12,7 @@ namespace RemoveDuplicatesFromString {
     /// FOLLOW UP
     /// Write the test cases for this method.
     /// </summary>
-    class Program {
+    class RemoveDuplicatesFromString {
 
         static void Main(string[] args) {
 
@@ -24,7 +26,7 @@ namespace RemoveDuplicatesFromString {
 
         /// <summary>
         /// Solution using linq
-        /// Working correctly, but uses additional array
+        /// Works correctly, but uses additional array
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
@@ -41,7 +43,21 @@ namespace RemoveDuplicatesFromString {
 
         static string RemoveDuplicates(string str) {
 
+            var strArr = str.ToCStyleString();
 
+            for (int i = 0; i < strArr.Length; i++) {
+
+                for (int j = i + 1; j < strArr.Length; j++) {
+
+                    if (strArr[i] == strArr[j]) {
+                        strArr[j] = '\0';
+                    }
+
+                }
+
+            }
+
+            return strArr.ConvertToString();
 
         }
 
